@@ -1,1 +1,2 @@
-web: hug -f __init__.py -p $PORT
+web: gunicorn -b 0.0.0.0:$PORT main:__hug_wsgi__
+
